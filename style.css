@@ -19,6 +19,14 @@
   justify-content: center;
 }
 
+/* Layout for mobile devices */
+@media (max-width: 480px) {
+  #game-area {
+    display: block;
+    text-align: center;
+  }
+}
+
 body {
   background-color: #f5f5f5;
   color: #333;
