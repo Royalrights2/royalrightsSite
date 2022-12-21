@@ -11,6 +11,24 @@ let currentScore = 0;
 const maxX = 600 - 50; // 50 is the width of the target
 const maxY = 600 - 50; // 50 is the height of the target
 
+// Array of advertisement images
+const advertisements = [
+  'clintonAd.jpg',
+  'trudeauAd.jpg',
+  'bushAd.jpg'
+];
+
+// Get a random advertisement from the array
+const randomAd = advertisements[Math.floor(Math.random() * advertisements.length)];
+
+// Create an image element for the advertisement
+const adElement = document.createElement('img');
+adElement.src = randomAd;
+adElement.alt = 'Advertisement';
+
+// Append the advertisement to the page
+document.body.appendChild(adElement);
+
 function moveTarget() {
   // Get a random x and y position within the 800x800 square
   const x = Math.floor(Math.random() * (maxX + 1));
