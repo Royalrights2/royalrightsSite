@@ -1,0 +1,26 @@
+#target {
+  width: 50px;
+  height: 50px;
+  background-image: url('https://pbs.twimg.com/profile_images/1496500545795903495/roHzaRnZ_400x400.png'); /* Replace 'face.jpg' with the path to your image file */
+  background-size: cover; /* This will stretch the image to fit the element */
+  border-radius: 50%;
+  position: absolute;
+}
+
+/* Add a black border around the 800x800 area */
+
+#game-area {
+  width: 600px;
+  height: 600px;
+  border: 1px solid black;
+  position: relative; /* This is needed for the absolute positioning of the target */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
